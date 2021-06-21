@@ -37,7 +37,7 @@ class DataHandler:
         frames = []
 
         # searching for all csv files in the data directory and loading the data in multiple dataframes
-        for root, dirs, files in os.walk('data/original_data'):
+        for root, dirs, files in os.walk(r'../data/original_data'):
             for f in files:
                 if f.endswith(self.environment[0] + '.csv'):
                     file_path = os.path.join(root, f)
